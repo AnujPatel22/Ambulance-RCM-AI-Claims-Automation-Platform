@@ -1,0 +1,47 @@
+[
+  {
+    "id": "DEN-2001",
+    "claim_id": "CLM-1001",
+    "payer": "Metro Medicare Advantage",
+    "reason": "Missing signature",
+    "status": "needs_appeal",
+    "missing_evidence": ["Patient signature or signature exception", "Crew attestation for inability to sign"],
+    "denial_date": "2026-05-02"
+  },
+  {
+    "id": "DEN-2002",
+    "claim_id": "CLM-1003",
+    "payer": "State EMS Medicaid",
+    "reason": "Prior authorization missing",
+    "status": "needs_review",
+    "missing_evidence": ["Authorization reference", "Stretcher necessity detail", "Signature exception"],
+    "denial_date": "2026-05-04"
+  },
+  {
+    "id": "DEN-2003",
+    "claim_id": "CLM-1006",
+    "payer": "State EMS Medicaid",
+    "reason": "Mileage not documented",
+    "status": "needs_appeal",
+    "missing_evidence": ["Loaded mileage confirmation", "Origin to destination mileage reconciliation"],
+    "denial_date": "2026-05-08"
+  },
+  {
+    "id": "DEN-2004",
+    "claim_id": "CLM-1007",
+    "payer": "Metro Medicare Advantage",
+    "reason": "Non-emergency transport necessity missing",
+    "status": "open",
+    "missing_evidence": ["Detailed medical necessity", "Reason lower-acuity transport was unsafe", "Signature or exception"],
+    "denial_date": "2026-05-12"
+  },
+  {
+    "id": "DEN-2005",
+    "claim_id": "CLM-1005",
+    "payer": "Southwest Commercial Health",
+    "reason": "BLS emergency support missing",
+    "status": "appeal_drafted",
+    "missing_evidence": ["Crew monitoring detail", "Behavioral safety risk narrative"],
+    "denial_date": "2026-05-15"
+  }
+]

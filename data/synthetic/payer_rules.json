@@ -1,0 +1,112 @@
+[
+  {
+    "id": "RULE-001",
+    "payer": "Metro Medicare Advantage",
+    "payer_type": "Medicare Advantage",
+    "hcpcs_code": "A0427",
+    "denial_reason": "Medical necessity insufficient",
+    "title": "ALS emergency transport medical necessity",
+    "rule_text": "For ALS emergency ambulance transport, documentation should show an emergency response, abnormal assessment findings, ALS-level monitoring or intervention, and transport to an appropriate facility.",
+    "required_fields": ["incident_type", "destination", "medical_necessity", "interventions", "vitals"],
+    "keywords": ["als", "emergency", "abnormal vitals", "oxygen", "cardiac monitor", "medical necessity"]
+  },
+  {
+    "id": "RULE-002",
+    "payer": "Metro Medicare Advantage",
+    "payer_type": "Medicare Advantage",
+    "hcpcs_code": "A0428",
+    "denial_reason": "Non-emergency transport necessity missing",
+    "title": "Non-emergency stretcher necessity",
+    "rule_text": "Non-emergency ambulance claims should document why the patient could not be transported safely by wheelchair, private vehicle, or other lower-acuity mode.",
+    "required_fields": ["medical_necessity", "pickup_location", "destination", "signature_or_exception"],
+    "keywords": ["non-emergency", "stretcher", "unable to sit", "bed confined", "signature"]
+  },
+  {
+    "id": "RULE-003",
+    "payer": "Metro Medicare Advantage",
+    "payer_type": "Medicare Advantage",
+    "hcpcs_code": "ALL",
+    "denial_reason": "Missing signature",
+    "title": "Signature or valid exception",
+    "rule_text": "Claims must include a patient signature, authorized representative signature, or documented signature exception such as refusal, inability to sign, or crew-attested emergency condition.",
+    "required_fields": ["signature_or_exception"],
+    "keywords": ["signature", "refusal", "unable to sign", "authorized representative"]
+  },
+  {
+    "id": "RULE-004",
+    "payer": "State EMS Medicaid",
+    "payer_type": "Medicaid",
+    "hcpcs_code": "A0428",
+    "denial_reason": "Prior authorization missing",
+    "title": "Medicaid scheduled transport documentation",
+    "rule_text": "Scheduled non-emergency transports should include destination, loaded mileage, medical necessity, and authorization reference when required by the plan.",
+    "required_fields": ["destination", "mileage", "medical_necessity", "signature_or_exception"],
+    "keywords": ["medicaid", "scheduled", "authorization", "loaded mileage", "dialysis"]
+  },
+  {
+    "id": "RULE-005",
+    "payer": "State EMS Medicaid",
+    "payer_type": "Medicaid",
+    "hcpcs_code": "A0427",
+    "denial_reason": "Mileage not documented",
+    "title": "Loaded mileage requirement",
+    "rule_text": "Emergency ambulance claims must include loaded mileage from pickup to destination and should reconcile with the billing mileage line.",
+    "required_fields": ["mileage", "pickup_location", "destination"],
+    "keywords": ["mileage", "loaded mileage", "origin", "destination"]
+  },
+  {
+    "id": "RULE-006",
+    "payer": "Southwest Commercial Health",
+    "payer_type": "Commercial",
+    "hcpcs_code": "A0429",
+    "denial_reason": "BLS emergency support missing",
+    "title": "BLS emergency transport support",
+    "rule_text": "BLS emergency transport should show acute symptoms, crew assessment, monitoring during transport, and why ambulance transport was reasonable for the patient condition.",
+    "required_fields": ["incident_type", "medical_necessity", "vitals", "destination"],
+    "keywords": ["bls", "emergency", "monitoring", "acute symptoms"]
+  },
+  {
+    "id": "RULE-007",
+    "payer": "Southwest Commercial Health",
+    "payer_type": "Commercial",
+    "hcpcs_code": "ALL",
+    "denial_reason": "Destination not covered",
+    "title": "Appropriate facility destination",
+    "rule_text": "Documentation should identify the pickup location, destination, and clinical reason the destination was appropriate for the patient need.",
+    "required_fields": ["pickup_location", "destination", "medical_necessity"],
+    "keywords": ["destination", "facility", "appropriate", "pickup"]
+  },
+  {
+    "id": "RULE-008",
+    "payer": "Self Pay Demo Plan",
+    "payer_type": "Self Pay",
+    "hcpcs_code": "ALL",
+    "denial_reason": "Incomplete patient responsibility documentation",
+    "title": "Self-pay documentation summary",
+    "rule_text": "Self-pay demo claims should include clear transport reason, loaded mileage, pickup, destination, and patient or representative signature when available.",
+    "required_fields": ["medical_necessity", "mileage", "pickup_location", "destination"],
+    "keywords": ["self pay", "mileage", "transport reason", "signature"]
+  },
+  {
+    "id": "RULE-009",
+    "payer": "Metro Medicare Advantage",
+    "payer_type": "Medicare Advantage",
+    "hcpcs_code": "A0429",
+    "denial_reason": "Emergency response unclear",
+    "title": "Emergency dispatch and response clarity",
+    "rule_text": "Emergency ambulance records should document dispatch context, patient complaint, assessment findings, and transport destination.",
+    "required_fields": ["incident_type", "medical_necessity", "pickup_location", "destination"],
+    "keywords": ["dispatch", "complaint", "assessment", "emergency"]
+  },
+  {
+    "id": "RULE-010",
+    "payer": "State EMS Medicaid",
+    "payer_type": "Medicaid",
+    "hcpcs_code": "ALL",
+    "denial_reason": "Incomplete PCR",
+    "title": "PCR completeness baseline",
+    "rule_text": "A complete ambulance claim should include chief complaint or reason for transport, pickup, destination, mileage, medical necessity, and signature or exception.",
+    "required_fields": ["pickup_location", "destination", "mileage", "medical_necessity", "signature_or_exception"],
+    "keywords": ["pcr", "complete", "medical necessity", "signature", "mileage"]
+  }
+]

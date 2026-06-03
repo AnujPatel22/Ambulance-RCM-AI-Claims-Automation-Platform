@@ -1,0 +1,27 @@
+[
+  {
+    "id": "PCR-1001",
+    "title": "Respiratory distress with oxygen intervention",
+    "transcript": "Unit Medic 12 responded to a 74-year-old female with shortness of breath and chest discomfort at home. Patient was found seated, alert but anxious, with oxygen saturation of 88 percent on room air. Crew administered oxygen by nasal cannula and transported patient to Valley Medical Center. Mileage was 12.4 miles. Patient required monitoring during transport due to abnormal vitals and dyspnea. Patient was unable to sign due to respiratory distress."
+  },
+  {
+    "id": "PCR-1002",
+    "title": "Ground-level fall with hip pain",
+    "transcript": "Rescue 4 responded for a 68-year-old male after a ground-level fall at an assisted living facility. Patient reported severe right hip pain and inability to stand. Vitals were blood pressure 142 over 84, pulse 96, respirations 20. Crew applied spinal motion precautions, monitored patient, and transported to North County Hospital. Loaded mileage was 6.8 miles. Facility staff signed transport paperwork."
+  },
+  {
+    "id": "PCR-1003",
+    "title": "Dialysis transport missing signature",
+    "transcript": "Ambulance 7 completed a non-emergency dialysis transport for a 59-year-old patient from home to River Dialysis Center. Patient was stable, alert, and transported by stretcher because patient could not safely sit upright for the trip. Mileage was 4.1 miles. No patient signature or signature exception was documented."
+  },
+  {
+    "id": "PCR-1004",
+    "title": "Chest pain emergency transport",
+    "transcript": "Medic 3 dispatched to an urgent care clinic for a 63-year-old patient with chest pain and diaphoresis. Initial vitals showed blood pressure 166 over 94 and pulse 118. Crew placed patient on cardiac monitor, administered aspirin per protocol, and transported emergent to Valley Medical Center. Loaded mileage 9.7 miles. Patient signature obtained at destination."
+  },
+  {
+    "id": "PCR-1005",
+    "title": "Behavioral health transport requiring monitoring",
+    "transcript": "Unit 18 transported an adult patient from a community clinic to Desert Regional Medical Center for behavioral health evaluation. Patient was anxious, intermittently confused, and required crew monitoring for safety. No medications were administered. Loaded mileage was 15.2 miles. Medical necessity narrative noted altered mentation and need for supervised transport. Crew documented patient refused signature and refusal was witnessed."
+  }
+]
