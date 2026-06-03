@@ -1,8 +1,23 @@
 # Ambulance RCM & AI Claims Automation Platform
 
+[![CI](https://github.com/AnujPatel22/Ambulance-RCM-AI-Claims-Automation-Platform/actions/workflows/ci.yml/badge.svg)](https://github.com/AnujPatel22/Ambulance-RCM-AI-Claims-Automation-Platform/actions/workflows/ci.yml)
+![Go](https://img.shields.io/badge/Go-Claims%20Service-00ADD8?logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/Python-AI%20Service-3776AB?logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-TypeScript-3178C6?logo=react&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?logo=postgresql&logoColor=white)
+![Synthetic Data](https://img.shields.io/badge/Data-100%25%20Synthetic-2E7D32)
+
 A full-stack AI platform that simulates revenue-cycle automation for ambulance and EMS agencies. The platform converts synthetic EMS documentation into structured PCR fields, validates ambulance claims against payer requirements, detects pre-bill errors, retrieves payer rules with RAG, manages denied claims, and generates appeal letters using LLM-powered workflows.
 
 This project uses only synthetic data. It is not a medical device, billing system, compliance product, or production healthcare application.
+
+## Why It Looks Legit
+
+- Multi-service architecture with Go, Python/FastAPI, React, PostgreSQL, and Docker.
+- Synthetic EMS claim workflows covering PCR extraction, payer rule retrieval, denial risk, and appeal generation.
+- Backend tests and GitHub Actions workflow.
+- Clear security/compliance disclaimers for public healthcare portfolio work.
+- Resume-ready story focused on revenue-cycle automation and operational AI.
 
 ## Why This Project Exists
 
