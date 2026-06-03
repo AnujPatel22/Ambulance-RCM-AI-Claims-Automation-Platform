@@ -11,6 +11,12 @@ A full-stack AI platform that simulates revenue-cycle automation for ambulance a
 
 This project uses only synthetic data. It is not a medical device, billing system, compliance product, or production healthcare application.
 
+## Product Story
+
+Ambulance revenue-cycle work is a good fit for AI-assisted software because the workflow depends on documentation quality, payer-specific rules, and fast follow-up when claims are denied. A missing signature, vague medical necessity statement, incomplete mileage record, or unsupported transport code can turn into days of manual work.
+
+This project simulates that environment end to end. It starts with synthetic EMS documentation, extracts structured PCR-style fields, validates a claim before submission, retrieves payer rules, flags denial risk, and drafts an appeal letter. The emphasis is not just "AI writes text"; the system shows how AI can be wrapped inside a rules-aware workflow with structured outputs, deterministic validation, and human-review-ready results.
+
 ## Why It Looks Legit
 
 - Multi-service architecture with Go, Python/FastAPI, React, PostgreSQL, and Docker.
@@ -18,6 +24,17 @@ This project uses only synthetic data. It is not a medical device, billing syste
 - Backend tests and GitHub Actions workflow.
 - Clear security/compliance disclaimers for public healthcare portfolio work.
 - Resume-ready story focused on revenue-cycle automation and operational AI.
+- Realistic RCM flow across documentation, pre-bill validation, denial management, and appeals.
+- Mock fallback design so the project remains runnable without paid LLM credentials.
+- Separate claims and AI service boundaries to reflect how a larger revenue-cycle platform could evolve.
+
+## What Reviewers Should Notice
+
+- The Go claims service owns deterministic claim and denial workflows.
+- The Python AI service owns extraction, RAG-style retrieval, and appeal generation.
+- The React UI presents operational work queues instead of a generic landing page.
+- The project uses synthetic data throughout, which makes it safe for public GitHub review.
+- The docs explain both the product workflow and the deployment/compliance gap honestly.
 
 ## Why This Project Exists
 
@@ -199,6 +216,18 @@ docker compose up --build
 11. Generate an appeal letter.
 12. Review the simulated improvement metrics.
 
+## 60-Second Reviewer Demo
+
+For a quick review, focus on this path:
+
+1. Start the stack with `docker compose up --build`.
+2. Open the frontend at `http://localhost:5173`.
+3. Select an EMS transcript in Ambient Documentation.
+4. Extract PCR fields and inspect the medical necessity output.
+5. Validate a claim and review missing requirements.
+6. Open Denial Management and generate an appeal letter.
+7. Review API docs and tests to see the backend structure behind the UI.
+
 ## Example Synthetic EMS Transcript
 
 Unit Medic 12 responded to a 74-year-old female with shortness of breath and chest discomfort at home. Patient was found seated, alert but anxious, with oxygen saturation of 88 percent on room air. Crew administered oxygen by nasal cannula and transported patient to Valley Medical Center. Mileage was 12.4 miles. Patient required monitoring during transport due to abnormal vitals and dyspnea.
@@ -311,6 +340,13 @@ This is a portfolio MVP. A production healthcare deployment would require:
 - Add document upload and OCR
 - Add FHIR/HL7-compatible data adapters
 - Add production-grade GCP deployment
+
+## Engineering Notes
+
+- The project separates deterministic validation from LLM-assisted text generation.
+- Synthetic payer rules provide grounded context for appeal generation and denial explanations.
+- The architecture keeps claim workflow data and AI workflow logic in separate services.
+- The portfolio story is intentionally healthcare-specific while avoiding real PHI or payer contracts.
 
 ## License
 
